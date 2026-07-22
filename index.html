@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Copy this code and send it back:</h2>
+  <p id="code" style="font-size:20px; font-weight:bold;"></p>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById("code").textContent = params.get("code") || "No code found";
+  </script>
+</body>
+</html>
